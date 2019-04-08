@@ -1,0 +1,11 @@
+domain furb
+
+"Projeto FURB"
+service basico {
+    endpoints {
+    }
+    types {
+    }
+    entities {
+    }
+}
