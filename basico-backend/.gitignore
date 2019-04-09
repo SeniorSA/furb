@@ -37,4 +37,3 @@ RemoteSystemsTempFiles/.project
 output/**
 *.orig
 *.iml
-/pom.xml
