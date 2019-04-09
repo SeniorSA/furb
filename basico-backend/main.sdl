@@ -2,21 +2,9 @@ domain furb
 
 service basico {
     endpoints {
-    	query helloWorld {
-    		in {
-    			who : string
-    		}
-    		out {
-    			result : string
-    		}
-    	}
     }
     types {
     }
     entities {
-    	fixed entity world {
-    		id : uuid
-    		name : string
-    	}
     }
 }
