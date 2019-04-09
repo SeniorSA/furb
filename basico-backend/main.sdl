@@ -1,6 +1,5 @@
 domain furb
 
-"Projeto FURB"
 service basico {
     endpoints {
     	query helloWorld {

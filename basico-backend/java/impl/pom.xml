@@ -44,11 +44,6 @@
 			<version>${oracle-driver-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.microsoft.sqljdbc</groupId>
-			<artifactId>sqljdbc4</artifactId>
-			<version>${ms-sql-server-driver-version}</version>
-		</dependency>
-		<dependency>
 			<groupId>net.sourceforge.jtds</groupId>
 			<artifactId>jtds</artifactId>
 			<version>${jtds-sql-server-driver-version}</version>
