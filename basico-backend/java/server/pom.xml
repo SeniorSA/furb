@@ -18,9 +18,6 @@
         <version>develop-SNAPSHOT</version>
         <artifactId>furb-basico-parent</artifactId>
     </parent>
-    <properties>
-        <sonar.sources>src-gen/main/resources</sonar.sources>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>br.com.senior.messaging</groupId>
