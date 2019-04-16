@@ -1,7 +1,17 @@
 domain furb
 
+"http://dontpad.com/pomxmlserver
+ http://dontpad.com/serverconf "
 service basico {
     endpoints {
+    	query helloWorld {
+    		in {
+    			who : string?
+    		}
+    		out {
+    			result : string
+    		}
+    	}
     }
     types {
     }

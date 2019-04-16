@@ -16,6 +16,73 @@ public class BasicoValidator {
     /**
      * Validates the payload for required fields and valid values.
      */
+    public static void validate(br.com.senior.furb.basico.HelloWorldInput toValidate) {
+    	validate(toValidate, true);
+    }
+    
+    /**
+     * Validates the payload for valid values and checks for required fields if required argument is true.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldInput toValidate, boolean required) {
+    	validate(toValidate, null, true);
+    }
+    
+    /**
+     * Validates the payload for valid values using message headers and checks for required fields if required argument is true.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldInput toValidate, Map<String, Object> headers, boolean required) {
+    	validate(toValidate, headers, required, new ArrayList<>());
+    }
+    
+    /**
+     * Validates the payload for valid values using message headers and checks for required fields if required argument is true ignoring if already validated.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldInput toValidate, Map<String, Object> headers, boolean required, List<Object> validated) {
+    	if (validated.contains(toValidate)) {
+    		return;
+    	}
+    	validated.add(toValidate);
+    	
+    }
+    /**
+     * Validates the payload for required fields and valid values.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldOutput toValidate) {
+    	validate(toValidate, true);
+    }
+    
+    /**
+     * Validates the payload for valid values and checks for required fields if required argument is true.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldOutput toValidate, boolean required) {
+    	validate(toValidate, null, true);
+    }
+    
+    /**
+     * Validates the payload for valid values using message headers and checks for required fields if required argument is true.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldOutput toValidate, Map<String, Object> headers, boolean required) {
+    	validate(toValidate, headers, required, new ArrayList<>());
+    }
+    
+    /**
+     * Validates the payload for valid values using message headers and checks for required fields if required argument is true ignoring if already validated.
+     */
+    public static void validate(br.com.senior.furb.basico.HelloWorldOutput toValidate, Map<String, Object> headers, boolean required, List<Object> validated) {
+    	if (validated.contains(toValidate)) {
+    		return;
+    	}
+    	validated.add(toValidate);
+    	
+    	if (required) {
+    		if (toValidate.result == null) {
+    			throw new IllegalArgumentException("result is required");
+    		}
+    	}
+    }
+    /**
+     * Validates the payload for required fields and valid values.
+     */
     public static void validate(br.com.senior.furb.basico.ServiceStartedPayload toValidate) {
     	validate(toValidate, true);
     }
